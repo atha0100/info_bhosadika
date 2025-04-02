@@ -1,12 +1,12 @@
 'use client'
 import React from 'react';
-import Link from 'next/link'; // For navigation
-import '../styles.css'; // Correct CSS import path
+import Link from 'next/link';
+import '../styles.css';
 
 export default function Finance() {
   return (
     <main>
-      <header>
+      <header className="header">
         <h1>Finance Overview</h1>
         <nav>
           <ul>
@@ -18,7 +18,7 @@ export default function Finance() {
         </nav>
       </header>
 
-      <section className="main-section">
+      <section className="finance-section">
         <h2>Building Finances</h2>
         <div className="finance-stats">
           <div className="stat">
@@ -34,10 +34,44 @@ export default function Finance() {
             <p>$30,000</p>
           </div>
         </div>
+
+        <div className="transaction-history">
+          <h2>Recent Transactions</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025-03-01</td>
+                <td>Monthly Maintenance Fees</td>
+                <td>$10,000</td>
+                <td>Paid</td>
+              </tr>
+              <tr>
+                <td>2025-03-05</td>
+                <td>Repairs & Maintenance</td>
+                <td>-$2,500</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>2025-03-10</td>
+                <td>Security Services</td>
+                <td>-$4,000</td>
+                <td>Pending</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
-      <footer>
-        <p>&copy; 2025 Strata Management | <Link href="/contact" style={{ color: 'white' }}>Contact Us</Link> | <Link href="/about" style={{ color: 'white' }}>About</Link></p>
+      <footer className="footer">
+        <p>&copy; 2025 Strata Management | <Link href="/contact">Contact Us</Link> | <Link href="/about">About</Link></p>
       </footer>
     </main>
   );
