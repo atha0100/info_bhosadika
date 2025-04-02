@@ -11,7 +11,7 @@ export default function Home() {
         <h1>Strata Management</h1>
         <nav>
           <ul>
-            <li><Link href="/home">Home</Link></li>
+            <li><Link href="/">Home</Link></li>
             <li><Link href="/finance">Finance</Link></li>
             <li><Link href="/committee">Committee</Link></li>
             <li><Link href="/maintenance">Maintenance</Link></li>

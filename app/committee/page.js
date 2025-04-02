@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // For navigation
+import Link from 'next/link'; // For navigation
 import '../styles.css'; // Correct CSS import path
 
 export default function Committee() {
@@ -9,10 +9,10 @@ export default function Committee() {
         <h1>Committee Members</h1>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/finance">Finance</Link></li>
-            <li><Link to="/maintenance">Maintenance</Link></li>
-            <li><Link to="/documents">Documents</Link></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/finance">Finance</Link></li>
+            <li><Link href="/maintenance">Maintenance</Link></li>
+            <li><Link href="/documents">Documents</Link></li>
           </ul>
         </nav>
       </header>
@@ -39,7 +39,7 @@ export default function Committee() {
       </section>
 
       <footer>
-        <p>&copy; 2025 Strata Management | <a href="/contact" style={{ color: 'white' }}>Contact Us</a> | <a href="/about" style={{ color: 'white' }}>About</a></p>
+        <p>&copy; 2025 Strata Management | <Link href="/contact" style={{ color: 'white' }}>Contact Us</Link> | <Link href="/about" style={{ color: 'white' }}>About</Link></p>
       </footer>
     </main>
   );

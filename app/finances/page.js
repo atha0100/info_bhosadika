@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; // For navigation
 import '../styles.css'; // Correct CSS import path
 
 export default function Finance() {
@@ -8,10 +9,10 @@ export default function Finance() {
         <h1>Finance Overview</h1>
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/committee">Committee</a></li>
-            <li><a href="/maintenance">Maintenance</a></li>
-            <li><a href="/documents">Documents</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/committee">Committee</Link></li>
+            <li><Link href="/maintenance">Maintenance</Link></li>
+            <li><Link href="/documents">Documents</Link></li>
           </ul>
         </nav>
       </header>
@@ -35,7 +36,7 @@ export default function Finance() {
       </section>
 
       <footer>
-        <p>&copy; 2025 Strata Management | <a href="/contact" style={{ color: 'white' }}>Contact Us</a> | <a href="/about" style={{ color: 'white' }}>About</a></p>
+        <p>&copy; 2025 Strata Management | <Link href="/contact" style={{ color: 'white' }}>Contact Us</Link> | <Link href="/about" style={{ color: 'white' }}>About</Link></p>
       </footer>
     </main>
   );

@@ -49,7 +49,7 @@ export default function Documents() {
       </section>
 
       <footer>
-        <p>&copy; 2025 Strata Management | <a href="/contact" style={{ color: 'white' }}>Contact Us</a> | <a href="/about" style={{ color: 'white' }}>About</a></p>
+        <p>&copy; 2025 Strata Management | <Link href="/contact" style={{ color: 'white' }}>Contact Us</Link> | <Link href="/about" style={{ color: 'white' }}>About</Link></p>
       </footer>
     </main>
   );
